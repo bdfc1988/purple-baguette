@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body {
+  padding-top: 50px;
+  font-family: 'Lato';
+}
+
+h1, h2, h3, h4 {
+  color: #7507ba;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+@media(min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+  }
+
+.bulb {
+  background-image: url('images/light.jpg');
+  height: 650px;
+  background-repeat: no-repeat;
+  
+}
+
+.bulb-text {
+  color: white;
+}
+
+.blur {
+  background: url('/images/light2.jpg') no-repeat center center/cover;
+  height: 650px;
+  z-index: -1;
+  filter: blur(70px);
+  height: 650px;
+}
+
+
+.card {
+  background-color: white;
+  color: #7507ba;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s ease-in;
+  min-width: 250px;
+  max-width: 275px;
+  font-size: 20px;
+}
+
+.card li {
+  margin: 5px;
+}
+
+
+.card:hover {
+  transform:  translateY(-7px);
+}
+
+.nav-color {
+  background-color: white; 
+}
+
+.navbar a {
+  color: #7507ba;
+}
+
+.navbar a:hover {
+  border-bottom: 1px #7507ba solid;
+}
+
+
+.contact {
+  font-size: 25px;
+}
+
+
+.footer {
+  background-color: black;
+
+}
+
+.footer p, .footer a {
+  color: white;
+
+}
+
+.social a {
+  margin: 0 10px;
+}
+
+.hidden {
+  display: none;
+}

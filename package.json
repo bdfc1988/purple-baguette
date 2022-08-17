@@ -1,0 +1,14 @@
+{
+  "name": "purple-baguette",
+  "version": "1.0.0",
+  "description": "Purple Baguette Web Design",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Ettenfield",
+  "license": "ISC",
+  "dependencies": {
+    "git": "^0.1.5"
+  }
+}
