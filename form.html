@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="style.css">
+      <title>Purple Baguette</title>
+   </head>
+   <body>
+      <div class="sm-m-5 m-3">
+         <form action="POST" name="contact" netlify-honeypot="bot-field" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+            <p class="hidden">
+                <label>
+                  Don’t fill this out if you’re human: <input name="bot-field" />
+                </label>
+              </p>
+            <h1>Personal Details</h1>
+            <h5>All personal information is for our records only and will remain private.</h5>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="fname">First Name</label>
+                  <input type="text" class="form-control" id="inputFirstName" required>
+               </div>
+               <div class="form-group col-md-6 my-2">
+                  <label for="sname">Surname</label>
+                  <input type="text" class="form-control" id="inputSurname" required>
+               </div>
+               <div class="form-group col-md-6 my-2">
+                  <label for="fname">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" required>
+               </div>
+               <div class="form-group col-md-6 my-2">
+                <label for="fname">Phone Number</label>
+                <input type="text" class="form-control" id="inputPhone">
+             </div>
+            </div>
+            <div class="form-group col-md-6 my-2">
+               <label for="inputAddress">Address</label>
+               <input type="text" class="form-control" id="inputAddress" required>
+            </div>
+            <div class="form-group col-md-6 my-2">
+               <label for="inputAddress2">Address 2</label>
+               <input type="text" class="form-control" id="inputAddress2">
+            </div>
+            <div class="form-group col-md-6 my-2">
+               <label for="inputCity">City</label>
+               <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-2 my-2">
+               <label for="inputPostcode">Post Code</label>
+               <input type="text" class="form-control" id="inputPostcode" required>
+            </div>
+            <div class="form-group">
+            </div>
+
+
+            <div class="my-5"></div>
+
+            <h1 id="business">Business Details</h1>
+            <div class="form-row">
+                <h5>Information to be shared online</h5>
+                <div class="form-group col-md-6 my-2">
+                    <label for="bname">Business Name</label>
+                    <input type="text" class="form-control" id="inputBusiness" required>
+                </div>
+                <div class="form-group col-md-6 my-2">
+                    <label for="bemail">Business Email</label>
+                    <input type="email" class="form-control" id="inputBEmail" placeholder="Leave blank if same as personal email">
+                </div>
+                <div>
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">I want my business email to be hidden online</label>
+                </div>
+                <div class="form-group col-md-6 my-2">
+                    <label for="bnumber">Business Phone Number</em></label>
+                    <input type="text" class="form-control" id="inputBNumber" placeholder="Leave blank if same as personal phone number">
+                </div>
+                <div>
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">I want my business phone number to be hidden online</label>
+                </div>
+                <div class="form-group col-md-6 my-2">
+                    <label for="bweb">Current Website Address</label>
+                    <input type="text" class="form-control" id="inputBweb" placeholder="Leave blank if you do not have one">
+                </div>
+                <div class="form-group col-md-6 my-2">
+                    <label for="inputAddress">Business Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Leave blank if same as personal address">
+                </div>
+                <div class="form-group col-md-6 my-2">
+                    <label for="inputAddress2">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2">
+                </div>
+                <div class="form-group col-md-6 my-2">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-2 my-2">
+                    <label for="inputPostcode">Post Code</label>
+                    <input type="text" class="form-control" id="inputPostcode">
+                </div>
+            <div>
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">I want my business address to be hidden online</label>
+            </div>
+            </div>
+
+            <div class="my-5"></div>
+
+            <h1>Business Services</h1>
+            <div class="form-group col-md-6 my-2">
+                <label for="services">Services <em>(Eg. Restaurant, Construction, Accountants)</em></label>
+                <input type="text" class="form-control" id="inputServices" placeholder="You can write multiple services.  Write your primary service first">
+            </div>
+            <div class="form-group col-md-6 my-2">
+                <label for="inputAreas">In which towns or cities does your business operate?</label>
+                <input type="text" class="form-control" id="inputAreas" placeholder="You can write multiple locations">
+            </div>
+            <div class="form-group col-md-6 my-2">
+                <p><label for="inputAreas">Write a description of what your business does (max 750 characters)</label></p>
+                <textarea name="bdescription" id="bdescription" cols="50" rows="5" maxlength="750"></textarea>
+            </div>
+            <div class="form-group col-md-6 my-2">
+                <label for="inputAreas" class="mb-2">Opening hours <em>For contractors write the times you are available to contact</em></label>
+                <table>
+                    <tr>
+                        <td>Mon</td>
+                        <td><input type="time" name="" id="" placeholder="Open"></td>
+                        <td><input type="time" name="" id="" placeholder="Close"></td>
+                    </tr>
+                    <tr>
+                        <td>Tues</td>
+                        <td><input type="time" name="" id="" placeholder="Open"></td>
+                        <td><input type="time" name="" id="" placeholder="Close"></td>
+                    </tr>
+                    <tr>
+                        <td>Weds</td>
+                        <td><input type="time" name="" id="" placeholder="Open"></td>
+                        <td><input type="time" name="" id="" placeholder="Close"></td>
+                    </tr>
+                    <tr>
+                        <td>Thurs</td>
+                        <td><input type="time" name="" id="" placeholder="Open"></td>
+                        <td><input type="time" name="" id="" placeholder="Close"></td>
+                    </tr>
+                    <tr>
+                        <td>Fri</td>
+                        <td><input type="time" name="" id="" placeholder="Open"></td>
+                        <td><input type="time" name="" id="" placeholder="Close"></td>
+                    </tr>
+                    <tr>
+                        <td>Sat</td>
+                        <td><input type="time" name="" id="" placeholder="Open"></td>
+                        <td><input type="time" name="" id="" placeholder="Close"></td>
+                    </tr>
+                    <tr>
+                        <td>Sun</td>
+                        <td><input type="time" name="" id="" placeholder="Open"></td>
+                        <td><input type="time" name="" id="" placeholder="Close"></td>
+                    </tr>
+                </table>
+    
+            </div>
+
+
+            <div class="my-5"></div>
+
+            <h1 id="business">Media</h1>
+            <h4>Please Check All The Sites Where You Have Listed Your Business</h4>
+            <br>
+            <h4>Search Engines</h4>
+            <div class="form-row">
+                <div class="d-flex justify-content-start">
+                    <div class="mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Google Business</label>
+                    </div>
+                    <div class="mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Bing.com</label>
+                    </div>
+                    <div class="mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Apple Maps</label>
+                    </div>
+                </div>
+                <br>
+                <h4>Social Media</h4>
+                <div class="d-flex justify-content-start">
+                    <div class="mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Facebook</label>
+                    </div>
+                    <div class="mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Instagram</label>
+                    </div>
+                    <div class="mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Twitter</label>
+                    </div>
+                    <div class="mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">LinkedIn</label>
+                    </div>
+                </div>
+
+                <br>
+                <h4>Business Directories</h4>
+                <div class="d-flex justify-content-start">
+                    <div class="mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Yell.com</label>
+                    </div>
+                    <div class="mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Yelp.com</label>
+                    </div>
+                    <div class="mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Cylex</label>
+                    </div>
+                    <div class="mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Thomson Local</label>
+                    </div>
+                    
+                </div>
+
+                <br>
+
+                <div class="media">
+                    <h4>Photos and Videos</h4>
+                    <div>
+                        <p>Google favours businesses with more photos and videos on their online accounts.</p>
+                        <p>Please email any photos and videos you would like to share to <b>locals.seo.uk@gmail.com</b></p>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">I am happy for Purple Baguette to find and use images from my social media profiles.  These can be changed later</label>
+                    </div>
+                    <!-- <input type="file" id="image_upload" accept=".png, .jpg, .jpeg" multiple>
+                    <div id="image_display" class="display-image mt-2"></div> -->
+                </div>
+                
+
+               <div class="form-group">
+               </div>
+               <button type="submit" class="btn btn-primary mt-2">Submit Form</button>
+            </div>
+
+        </form>
+      </div>
+
+
+      <script src="script.js"></script>
+    </body>
+</html>
