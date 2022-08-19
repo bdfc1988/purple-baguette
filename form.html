@@ -11,7 +11,7 @@
    </head>
    <body>
       <div class="sm-m-5 m-3">
-         <form action="POST" name="contact" netlify-honeypot="bot-field" data-netlify="true">
+         <form method="POST" name="contact" netlify-honeypot="bot-field" data-netlify="true" action="/success">
             <input type="hidden" name="form-name" value="contact">
             <p class="hidden">
                 <label>
@@ -126,7 +126,7 @@
                 <textarea name="description" id="description" cols="50" rows="5" maxlength="750"></textarea>
             </div>
             <div class="form-group col-md-6 my-2">
-                <label for="hours" class="mb-2">Opening hours <em>For contractors write the times you are available to contact</em></label>
+                <label for="hours" class="mb-2">Opening hours - leave blank for days you don't work.  <p><em>For contractors write the times you are available to contact</em></p></label>
                 <table id="hours">
                     <tr>
                         <td>Mon</td>
