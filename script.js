@@ -22,14 +22,14 @@ function scale (number, inMin, inMax, outMin, outMax) {
 
 // image upload
 
-const imageInput = document.querySelector('#image_upload');
-let uploaded_img = '';
+// const imageInput = document.querySelector('#image_upload');
+// let uploaded_img = '';
 
-imageInput.addEventListener("change", function() {
-    const reader = new FileReader();
-    reader.addEventListener("load", function() {
-        uploaded_img = reader.result;
-        document.querySelector('#image_display').style.backgroundImage = `url(${uploaded_img})`
-    })
-    reader.readAsDataURL(this.files[0])
-})
+// imageInput.addEventListener("change", function() {
+//     const reader = new FileReader();
+//     reader.addEventListener("load", function() {
+//         uploaded_img = reader.result;
+//         document.querySelector('#image_display').style.backgroundImage = `url(${uploaded_img})`
+//     })
+//     reader.readAsDataURL(this.files[0])
+// })
