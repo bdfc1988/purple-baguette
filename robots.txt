@@ -3,4 +3,3 @@ User-agent: *
 Disallow: /success.html
 Disallow: /form.html
 Disallow: /images
-Disallow: style.css
