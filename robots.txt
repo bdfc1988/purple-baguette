@@ -1,5 +1,7 @@
 Sitemap: https://purplebaguette.com/sitemap.xml
 User-agent: *
 Disallow: /success.html
+Disallow: /success
 Disallow: /form.html
+Disallow: /form
 Disallow: /images
