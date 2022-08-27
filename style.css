@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5 {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.1s ease-in;
   min-width: 250px;
-  max-width: 275px;
+  max-width: 300px;
   font-size: 20px;
 }
 
@@ -101,10 +101,6 @@ h1, h2, h3, h4, h5 {
   margin: 0 10px;
 }
 
-.hidden {
-  display: none;
-}
-
 .display-image {
   max-width:100%;
   max-height: 100%;
@@ -119,4 +115,56 @@ h1, h2, h3, h4, h5 {
 
 .list li {
   margin: 1vw;
+}
+
+.order {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+
+.showcase {
+  position: relative;
+}
+
+.showcase-form {
+    position: relative;
+    top: 60px;
+    width: fit-content;
+    margin: 30px;
+    padding: 20px;
+    z-index: 100;
+    justify-self: flex-end;
+    
+}
+
+.showcase-form .form-control {
+    margin: 10px 0;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
+    border: 0;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.showcase-form input:focus {
+    outline: none;
+}
+
+.contact-image {
+  margin-top: 30px;
+}
+
+.scroll {
+  background-color: transparent;
+  color: white;
+}
+
+
+.hidden {
+  display: none;
+  height: 0px;
 }

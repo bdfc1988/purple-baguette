@@ -41,20 +41,38 @@
 
         <section class="p-5">
             <div class="container mb-3" id="contact">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-md p-5">
-                        <h1>Contact Us</h1>
-                        <p>Coming soon...</p>
+                <div class="row align-items-center justify-content-around">
+                    <div class="showcase-form card">
+                        <h2>Have a Question?</h2>
+                        <form name="message" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                            <input type="hidden" name="form-name" value="message">
+                            <p class="hidden">
+                                <label>
+                                  Don’t fill this out if you’re human: <input name="bot-field" />
+                                </label>
+                            </p>
+                            <div class="form-control">
+                                <input type="text" name="name" id="name" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-control">
+                                <input type="text" name="number" id="number" placeholder="Phone Number">
+                            </div>
+                            <div class="form-control">
+                                <input type="email" name="email" id="email" placeholder="Email Address">
+                            </div>
+                            <div>
+                                <textarea class="form-control" name="message" id="message" cols="50" rows="3" maxlength="750" placeholder="Write your message here..."></textarea>
+                            </div>
+                            <input type="submit" value="Submit" class="btn btn-danger">
+                        </form>
                     </div>
-                    <div class="col-md ">
-                        <img src="images/contact.jpg" alt="Frequently Asked Questions" class="img-fluid" sizes="(max-width:300px);(height:auto);">
+                    <div class="col-md showcase-form">
+                        <img src="images/contact.jpg" alt="Frequently Asked Questions" class="img-fluid" sizes="(max-width:300px);(height:auto);" width="500px">
                     </div>
                 </div>
             </div>
         </section>
     
-
-        <!-- Enter form here -->
     
         <!-- footer -->
         <footer class="footer py-5">
