@@ -9,6 +9,15 @@ h1, h2, h3, h4, h5 {
   color: #7507ba;
 }
 
+p {
+  font-size: 25px;
+}
+
+li {
+  font-size: 20px;
+
+}
+
 .logo img {
   height: 50px;
   width: auto;
