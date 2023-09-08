@@ -10,12 +10,20 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
-  font-size: 25px;
+  font-size: 18px;
 }
 
 li {
   font-size: 20px;
 
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  margin: 20px;
 }
 
 .logo img {
@@ -177,3 +185,10 @@ li {
   display: none;
   height: 0px;
 }
+
+
+.resize {
+  width:540px; /* you can use % */
+  height: auto;
+}
+ 
